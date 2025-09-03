@@ -24,7 +24,7 @@ from core.pq_db import Base
 from config import settings
 
 # Import all models here for autogenerate support
-from models import user  # Import models for autogenerate support
+from models import user, tenant, role, user_role, tenant_invitation, audit_log  # Import models for autogenerate support
 
 target_metadata = Base.metadata
 
