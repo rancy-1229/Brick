@@ -6,24 +6,29 @@
 
 ```
 Brick/
-├── brick-backend/          # 后端项目 (FastAPI + PostgreSQL)
-│   ├── app/               # 应用代码
-│   │   ├── api/           # API接口
-│   │   ├── models/        # 数据模型
-│   │   ├── services/      # 业务逻辑
-│   │   ├── schemas/       # 数据验证
-│   │   └── core/          # 核心功能
-│   ├── docs/              # 文档
-│   └── main.py            # 主入口
-└── brick-frontend/        # 前端项目 (React + TypeScript + Vite)
+├── backend/               # 后端项目 (FastAPI + PostgreSQL)
+│   ├── app/              # 应用代码
+│   │   ├── api/          # API接口
+│   │   ├── models/       # 数据模型
+│   │   ├── services/     # 业务逻辑
+│   │   ├── schemas/      # 数据验证
+│   │   └── core/         # 核心功能
+│   ├── docs/             # 文档
+│   ├── alembic/          # 数据库迁移
+│   ├── main.py           # 主入口
+│   ├── pyproject.toml    # 项目配置
+│   └── start_server.py   # 启动脚本
+└── frontend/             # 前端项目 (React + TypeScript + Vite)
     ├── src/
-    │   ├── components/    # 组件
-    │   ├── pages/         # 页面
-    │   ├── services/      # API服务
-    │   ├── stores/        # 状态管理
-    │   ├── types/         # 类型定义
-    │   └── utils/         # 工具函数
-    └── index.html         # 入口HTML
+    │   ├── components/   # 组件
+    │   ├── pages/        # 页面
+    │   ├── services/     # API服务
+    │   ├── stores/       # 状态管理
+    │   ├── types/        # 类型定义
+    │   └── utils/        # 工具函数
+    ├── index.html        # 入口HTML
+    ├── package.json      # 项目配置
+    └── vite.config.ts    # Vite配置
 ```
 
 ## 功能特性
@@ -67,7 +72,7 @@ Brick/
 ### 后端启动
 
 ```bash
-cd brick-backend
+cd backend
 python start_server.py
 ```
 
@@ -78,7 +83,7 @@ python start_server.py
 ### 前端启动
 
 ```bash
-cd brick-frontend
+cd frontend
 pnpm install
 pnpm run dev
 ```
