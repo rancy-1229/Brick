@@ -1,3 +1,6 @@
+"""
+PostgreSQL Schema管理工具
+"""
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 from typing import Optional

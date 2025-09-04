@@ -3,7 +3,7 @@
 """
 from sqlalchemy import Column, Integer, DateTime, String
 from sqlalchemy.sql import func
-from core.pq_db import Base
+from app.core.pq_db import Base
 
 
 class UserRole(Base):

@@ -1,3 +1,6 @@
+"""
+租户上下文管理器
+"""
 from contextvars import ContextVar
 from typing import Optional
 from fastapi import Request, Depends
